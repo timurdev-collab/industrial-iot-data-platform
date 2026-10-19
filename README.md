@@ -27,3 +27,7 @@ Synthetic data is generated for demonstration, not collected from real SCADA equ
 After running the ingestion commands, execute `python -m pipeline.quality --db data/telemetry.db`. It checks business keys, sensor relationships, sensor reading ranges, hourly fact reconciliation and anomaly-count consistency. A failed check exits with nonzero status. Run `python scripts/benchmark.py --count 10000` for a hardware-dependent ingestion timing demonstration. Run all tests with `python -m unittest discover -s tests -v`.
 
 See [architecture and future scaling options](docs/architecture.md). These checks are local and are not evidence of production SLAs.
+
+## AWS + Jira Cloud planning
+
+See [AWS architecture and Jira Cloud backlog](docs/AWS_JIRA_ROADMAP.md). These are planning resources, **not** a claim of live AWS infrastructure or an active Jira Cloud board.
