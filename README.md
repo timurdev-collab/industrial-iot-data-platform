@@ -22,3 +22,8 @@ python -m unittest discover -s tests -v
 ```
 
 Synthetic data is generated for demonstration, not collected from real SCADA equipment. Generated database and events are ignored by Git.
+
+## Validate warehouse quality
+After running the ingestion commands, execute `python -m pipeline.quality --db data/telemetry.db`. It checks business keys, sensor relationships, sensor reading ranges, hourly fact reconciliation and anomaly-count consistency. A failed check exits with nonzero status. Run `python scripts/benchmark.py --count 10000` for a hardware-dependent ingestion timing demonstration. Run all tests with `python -m unittest discover -s tests -v`.
+
+See [architecture and future scaling options](docs/architecture.md). These checks are local and are not evidence of production SLAs.
