@@ -28,6 +28,6 @@ After running the ingestion commands, execute `python -m pipeline.quality --db d
 
 See [architecture and future scaling options](docs/architecture.md). These checks are local and are not evidence of production SLAs.
 
-## AWS + Jira Cloud planning
+## AWS architecture planning
 
-See [AWS architecture and Jira Cloud backlog](docs/AWS_JIRA_ROADMAP.md). These are planning resources, **not** a claim of live AWS infrastructure or an active Jira Cloud board.
+See [AWS architecture roadmap](docs/AWS_JIRA_ROADMAP.md). This is planning documentation, not a claim of live AWS infrastructure.
